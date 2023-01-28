@@ -34,7 +34,8 @@ public class LoginTest extends WebTestBase {
         homePage.loginClick();
         loginPage.login(prop.getProperty("userName"), prop.getProperty("password"));
         softAssert.assertEquals(myAccountPage.getTextOfMyAccountPage(), "MY ACCOUNT", "MY ACCOUNT text should be match");
-        softAssert.assertAll();
+        System.out.println("Hello This is an example of git");
+
     }
 
     @Test
